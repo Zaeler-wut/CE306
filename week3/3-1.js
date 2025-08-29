@@ -8,11 +8,11 @@ if (score >= 60 && score <= 69) {
 }
 
 if (score >= 70 && score <= 79) {
-  console.log("B");
+  console.log("C");
 }
 
 if (score >= 50 && score <= 59) {
-  console.log("B");
+  console.log("D");
 }
 
 if (score < 50) {
