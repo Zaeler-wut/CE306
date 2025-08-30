@@ -5,7 +5,7 @@ let students = [
     {name: "samak", score: 77},
     {name: "sompong", score: 55},
     {name: "yayee", score: 50},
-    {name: "intanin", score: 40}
+    {name: "intanin", score: 40} 
 ];
 
 function filterPassedStudents(lowScore) {

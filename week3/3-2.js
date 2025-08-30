@@ -8,7 +8,7 @@ if (discountPrice <= 0) {
 }else if (discountPrice <= 500) {
     discountPrice += 50
     console.log(discountPrice)
-}else if (discountPrice >= 500) {
+}else {
     discountPrice *= 0.9
     console.log(discountPrice)
 }
