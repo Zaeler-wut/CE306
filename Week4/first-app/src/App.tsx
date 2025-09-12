@@ -34,7 +34,6 @@
 
 // export default App
 
-
 // import React from "react";
 // import Greeting from "./components/Greeting";
 // import WelcomeBanner from "./components/WelcomeBanner";
@@ -54,49 +53,46 @@
 
 // export default App;
 
-
-
-
-
-
-import React from 'react';
-import UserProfileCard from './components/UserProfileCard';
-import type { UserData } from './components/UserProfileCard';
+import React from "react";
+import UserProfileCard from "./components/UserProfileCard";
+import type { UserData } from "./components/UserProfileCard";
 
 const App: React.FC = () => {
   const users: UserData[] = [
     {
-      id: 'user1',
-      name: 'Sami Hupia',
-      email: 'sami.h@example.com',
+      id: "user1",
+      name: "Sami Hupia",
+      email: "sami.h@example.com",
       online: true,
-      avatarUrl: 'https://cdn.pixabay.com/photo/2016/03/26/23/07/person-1281777_1280.jpg',
+      avatarUrl:
+        "https://cdn.pixabay.com/photo/2016/03/26/23/07/person-1281777_1280.jpg",
       skills: [
-        { skillName: 'React', level: 'Advanced' },
-        { skillName: 'TypeScript', level: 'Intermediate' },
-        { skillName: 'CSS', level: 'Advanced' },
+        { skillName: "React", level: "Advanced" },
+        { skillName: "TypeScript", level: "Intermediate" },
+        { skillName: "CSS", level: "Advanced" },
       ],
     },
     {
-      id: 'user2',
-      name: 'Vangoe Mos',
-      email: 'vangoe.M@example.com',
+      id: "user2",
+      name: "Vangoe Mos",
+      email: "vangoe.M@example.com",
       online: true,
-      avatarUrl: 'https://cdn.pixabay.com/photo/2017/11/18/05/02/yoga-2959226_1280.jpg',
+      avatarUrl:
+        "https://cdn.pixabay.com/photo/2017/11/18/05/02/yoga-2959226_1280.jpg",
       skills: [
-        { skillName: 'Project Management', level: 'Advanced' },
-        { skillName: 'Construction', level: 'Beginner' },
+        { skillName: "Project Management", level: "Advanced" },
+        { skillName: "Construction", level: "Beginner" },
       ],
     },
     {
-      id: 'user3',
-      name: 'chaisit madee',
-      email: 'chaisit.m@example.com',
+      id: "user3",
+      name: "chaisit madee",
+      email: "chaisit.m@example.com",
       online: false,
-      avatarUrl: 'https://randomuser.me/api/portraits/men/32.jpg',
+      avatarUrl: "https://randomuser.me/api/portraits/men/32.jpg",
       skills: [
-        { skillName: 'Vue.js' },
-        { skillName: 'Node.js', level: 'Intermediate' },
+        { skillName: "Vue.js" },
+        { skillName: "Node.js", level: "Intermediate" },
       ],
     },
   ];
@@ -108,30 +104,34 @@ const App: React.FC = () => {
   return (
     <div
       style={{
-        backgroundColor: '#d4dde6ff',
-        height: '100vh',
-        width: '100vw',
+        backgroundColor: "#d4dde6ff",
+        height: "100vh",
+        width: "100vw",
         padding: 40,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        boxSizing: 'border-box',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        boxSizing: "border-box",
       }}
     >
-      <h1 style={{ margin: '0 0 32px', color: '#333' }}>User Profile Cards</h1>
+      <h1 style={{ margin: "0 0 32px", color: "#333" }}>User Profile Cards</h1>
 
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'center',
+          display: "flex",
+          justifyContent: "center",
           gap: 24,
-          flexWrap: 'nowrap',
+          flexWrap: "nowrap",
           maxWidth: 1100,
-          width: '100%',
+          width: "100%",
         }}
       >
         {users.map((user) => (
-          <UserProfileCard key={user.id} user={user} onViewDetails={handleViewDetails} />
+          <UserProfileCard
+            key={user.id}
+            user={user}
+            onViewDetails={handleViewDetails}
+          />
         ))}
       </div>
     </div>
